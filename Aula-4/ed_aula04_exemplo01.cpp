@@ -31,7 +31,7 @@ int main(){
    	char op;    //variavel que guarda a opcao do menu
    	do{
    	  	system("cls");
-		printf("MENU DE OP��ES\n");
+		printf("MENU DE OPÇÕES\n");
       	//a variavel op recebe a opcao do menu escolhida em menu()
       	op = menu();
       	switch(op){
@@ -40,7 +40,7 @@ int main(){
 				if (x)
  	  		   		printf("\nLista vazia");
   				else
-	  				printf("\nLista n�o est� vazia");
+	  				printf("\nLista não está vazia");
             break;
          	case 'i': //insere no in�cio da lista
          		printf("\nQual valor deseja inserir na lista? ");
@@ -87,7 +87,7 @@ node *insereInicio (node *lista, int valor) {
 	node *novo;
 	novo = aloca();
 	if (novo == NULL) {
-        printf("Erro de aloca��o de mem�ria!\n");
+        printf("Erro de alocação de memória!\n");
         exit(1);
     }
 	novo->info = valor;
@@ -117,4 +117,3 @@ void destroiLista (node *lista) {
 		printf("\nLista destru�da com sucesso!");
 	}
 }
-
